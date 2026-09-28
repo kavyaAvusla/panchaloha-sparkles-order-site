@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Kundan choker set with stones">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf3f5"/><stop offset="1" stop-color="#efd9df"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8c96e"/><stop offset="1" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <path d="M110 300 q190 -190 380 0" fill="none" stroke="url(#g)" stroke-width="26" stroke-linecap="round"/>
+  <g fill="#c0392b">
+    <circle cx="160" cy="238" r="14"/><circle cx="230" cy="204" r="14"/>
+    <circle cx="300" cy="192" r="14"/><circle cx="370" cy="204" r="14"/>
+    <circle cx="440" cy="238" r="14"/>
+  </g>
+  <g fill="url(#g)">
+    <circle cx="185" cy="270" r="10"/><circle cx="300" cy="232" r="10"/><circle cx="415" cy="270" r="10"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# local env files (never commit keys)
+.env*.local
+
+# misc
+*.log
+.DS_Store
+next-env.d.ts
+tsconfig.tsbuildinfo

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Oxidised silver necklace with pendant">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f5f4"/><stop offset="1" stop-color="#dcdcda"/>
+    </linearGradient>
+    <linearGradient id="m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa0a6"/><stop offset="1" stop-color="#4d5257"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <path d="M120 220 q180 240 360 0" fill="none" stroke="url(#m)" stroke-width="14" stroke-linecap="round"/>
+  <g fill="url(#m)">
+    <circle cx="300" cy="352" r="30"/>
+    <path d="M300 382 l28 46 -28 34 -28 -34 z"/>
+  </g>
+  <g fill="#5c6166">
+    <circle cx="200" cy="286" r="7"/><circle cx="255" cy="322" r="7"/><circle cx="345" cy="322" r="7"/><circle cx="400" cy="286" r="7"/>
+  </g>
+</svg>
