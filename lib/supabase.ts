@@ -4,9 +4,16 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 //   NEXT_PUBLIC_SUPABASE_URL
 //   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
 // No secret/service key is read, requested or stored anywhere in this app.
-export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
-export const SUPABASE_PUBLISHABLE_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? '';
+//
+// .trim() and the trailing-slash strip guard against a stray space or newline
+// pasted into a host's environment-variable field, which otherwise produces a
+// "fetch failed" that is hard to see.
+export const SUPABASE_URL = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? '')
+  .trim()
+  .replace(/\/+$/, '');
+export const SUPABASE_PUBLISHABLE_KEY = (
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? ''
+).trim();
 
 const SETTING_NAMES = {
   url: 'NEXT_PUBLIC_SUPABASE_URL',

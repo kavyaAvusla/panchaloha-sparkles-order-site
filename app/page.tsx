@@ -1,4 +1,4 @@
-import { getSupabase, missingSupabaseSettings, type Item } from '@/lib/supabase';
+import { getSupabase, missingSupabaseSettings, SUPABASE_URL, type Item } from '@/lib/supabase';
 import { SHOP } from '@/lib/shop';
 import Catalogue from './catalogue';
 import OrderForm from './order-form';
@@ -67,6 +67,9 @@ function StatePanel({ load }: { load: Load }) {
         <p>The call to Supabase failed. The items could not be read.</p>
         <p className="hint">
           Supabase said: <code>{load.message}</code>
+        </p>
+        <p className="hint">
+          Address in use: <code>{SUPABASE_URL ? SUPABASE_URL : '(nothing set)'}</code>
         </p>
         <p className="hint">
           If the table does not exist yet, run the SQL blocks provided with this
